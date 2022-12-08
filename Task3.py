@@ -5,14 +5,8 @@
 lst = list(map(int, input("Введите числа через пробел: ").split()))
 print(f"Исходный список: {lst}")
 new_lst = []
-# for i in lst:
-#    if i not in new_lst:
-#        new_lst.append(i)
-# print(f"Список из неповторяющихся элементов: {new_lst}")
 for i in lst:
     if not lst.count(i) > 1:
         new_lst.append(i)
 print(f"Список из неповторяющихся элементов: {new_lst}")
 
-# я не поняла задание: если нужно вывести список без дубликатов, то нужно исползовать 1-ый цикл for, а 2-ой закомментить
-# а если вывести только те элементы, то 2-ой цикл for
